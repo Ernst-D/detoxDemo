@@ -3,8 +3,11 @@
   "runnerConfig": "e2e/config.json",
   "apps": {
     "ios": {
+      "binaryPath": "TullyDev.app",
       "type": "ios.app",
-      "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY"
+      "device": {
+          "type": "iPhone 11"
+    }
     },
     "android": {
       "type": "android.apk",

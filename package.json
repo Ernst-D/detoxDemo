@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Ernst-D/detoxDemo#readme",
   "devDependencies": {
-    "detox": "^18.17.0"
+    "detox": "^18.17.0",
+    "jest": "^27.0.4"
   }
 }
