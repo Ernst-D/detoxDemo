@@ -1,0 +1,43 @@
+describe('Recorded suite', () => {
+	it('MyRecordedTest', async () => {
+		await element(by.text("Sign In")).tap({"x":4,"y":21.5});
+		await element(by.type("RCTUITextField")).atIndex(0).tap();
+		await element(by.text("y")).atIndex(0).replaceText("y");
+		await element(by.text("ya")).atIndex(0).replaceText("ya");
+		await element(by.text("yan")).atIndex(0).replaceText("yan");
+		await element(by.text("yana")).atIndex(0).replaceText("yana");
+		await element(by.text("yanav")).atIndex(0).replaceText("yanav");
+		await element(by.text("yanavi")).atIndex(0).replaceText("yanavi");
+		await element(by.text("yanavi5")).atIndex(0).replaceText("yanavi5");
+		await element(by.text("yanavi51")).atIndex(0).replaceText("yanavi51");
+		await element(by.text("yanavi514")).atIndex(0).replaceText("yanavi514");
+		await element(by.text("yanavi5140")).atIndex(0).replaceText("yanavi5140");
+		await element(by.text("yanavi5140@")).atIndex(0).replaceText("yanavi5140@");
+		await element(by.text("yanavi5140@b")).atIndex(0).replaceText("yanavi5140@b");
+		await element(by.text("yanavi5140@bo")).atIndex(0).replaceText("yanavi5140@bo");
+		await element(by.text("yanavi5140@bot")).atIndex(0).replaceText("yanavi5140@bot");
+		await element(by.text("yanavi5140@botf")).atIndex(0).replaceText("yanavi5140@botf");
+		await element(by.text("yanavi5140@botfe")).atIndex(0).replaceText("yanavi5140@botfe");
+		await element(by.text("yanavi5140@botfed")).atIndex(0).replaceText("yanavi5140@botfed");
+		await element(by.text("yanavi5140@botfed.")).atIndex(0).replaceText("yanavi5140@botfed.");
+		await element(by.text("yanavi5140@botfed.c")).atIndex(0).replaceText("yanavi5140@botfed.c");
+		await element(by.text("yanavi5140@botfed.co")).atIndex(0).replaceText("yanavi5140@botfed.co");
+		await element(by.text("yanavi5140@botfed.com")).atIndex(0).replaceText("yanavi5140@botfed.com");
+		await element(by.type("RCTUITextField")).atIndex(1).tap();
+		await element(by.text("Y")).atIndex(0).replaceText("Y");
+		await element(by.text("Ya")).atIndex(0).replaceText("Ya");
+		await element(by.text("Yan")).atIndex(0).replaceText("Yan");
+		await element(by.text("Yana")).atIndex(0).replaceText("Yana");
+		await element(by.text("Yanav")).atIndex(0).replaceText("Yanav");
+		await element(by.text("Yanavi")).atIndex(0).replaceText("Yanavi");
+		await element(by.text("Yanavi1")).atIndex(0).replaceText("Yanavi1");
+		await element(by.text("Yanavi12")).atIndex(0).replaceText("Yanavi12");
+		await element(by.text("Yanavi123")).atIndex(0).replaceText("Yanavi123");
+		await element(by.text("Sign In")).atIndex(1).tap();
+		await element(by.id("DrivePlus")).tap();
+		await element(by.text("Cancel")).atIndex(1).tap();
+		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		await element(by.text("Cancel")).tap();
+	})
+});
