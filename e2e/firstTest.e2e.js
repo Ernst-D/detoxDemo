@@ -1,23 +1,25 @@
 describe('Example', () => {
   beforeAll(async () => {
-    await device.launchApp();
+    await device.launchApp({newInstance: true, permissions: {notifications: 'YES'}});
   });
 
   beforeEach(async () => {
     await device.reloadReactNative();
   });
 
-  it('should have welcome screen', async () => {
-    await expect(element(by.id('welcome'))).toBeVisible();
-  });
+  it('MyRecordedTest', async () => {
+		await element(by.text("Sign In")).atIndex(0).tap();
+		await element(by.type("RCTUITextField")).atIndex(0).replaceText("yanavi5140@botfed.com");
+		await element(by.type("RCTUITextField")).atIndex(1).replaceText("Yanavi123");
+		await element(by.text("Sign In")).atIndex(1).tap();
+		await element(by.id("DrivePlus")).tap();
+		await element(by.text("Cancel")).atIndex(1).tap();
+		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		await element(by.text("Cancel")).tap();
+	})
 
-  it('should show hello screen after tap', async () => {
-    await element(by.id('hello_button')).tap();
-    await expect(element(by.text('Hello!!!'))).toBeVisible();
-  });
-
-  it('should show world screen after tap', async () => {
-    await element(by.id('world_button')).tap();
-    await expect(element(by.text('World!!!'))).toBeVisible();
+  afterAll(async () => {
+    await device.terminateApp();
   });
 });
