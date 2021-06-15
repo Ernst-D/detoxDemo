@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Ernst-D/detoxDemo#readme",
   "devDependencies": {
+    "babel-preset-expo": "^8.3.0",
     "detox": "^18.17.0",
     "detox-recorder": "^1.0.151",
     "jest": "^27.0.4"
