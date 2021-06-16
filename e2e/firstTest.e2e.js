@@ -1,3 +1,4 @@
+import LoginPage from "../pages/login.page";
 import StartPage from "../pages/start.page";
     
 describe('Example', () => {
@@ -9,17 +10,15 @@ describe('Example', () => {
     await device.reloadReactNative();
   });
 
-  it('MyRecordedTest', async () => {
+  it('Search', async () => {
     await StartPage.signInBtn.tap()
-		// await element(by.label("Sign In")).atIndex(0).tap();
-		await element(by.type("RCTUITextField")).atIndex(0).replaceText("yanavi5140@botfed.com");
-		await element(by.type("RCTUITextField")).atIndex(1).replaceText("Yanavi123");
-		await element(by.label("Sign In")).atIndex(1).tap();
-		await element(by.id("DrivePlus")).tap();
-		await element(by.label("CreateCloseButton")).atIndex(1).tap();
-		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
-		await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
-		await element(by.text("Cancel")).tap();
+    await LoginPage.userLoginsWithValidCredentials();
+	
+		// await element(by.id("DrivePlus")).tap();
+		// await element(by.label("CreateCloseButton")).atIndex(1).tap();
+		// await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		// await element(by.type("RNGestureHandlerButton")).atIndex(0).tap();
+		// await element(by.text("Cancel")).tap();
 	})
 
   afterAll(async () => {
